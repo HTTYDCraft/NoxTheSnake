@@ -1,0 +1,8 @@
+{
+  "siteUrl": "https://httydcraft.github.io/NoxTheSnake",
+  "indexNowKey": "a474f7d8ac861df64c5cbf14693bcf21",
+  "pages": [
+    { "path": "/", "changefreq": "weekly", "priority": "1.0" },
+    { "path": "/links/", "changefreq": "weekly", "priority": "0.9" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "NoxTheSnake",
+  "short_name": "NoxTheSnake",
+  "description": "NoxTheSnake — programming, YouTube videos, Minecraft & VRChat.",
+  "start_url": "/NoxTheSnake/",
+  "scope": "/NoxTheSnake/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FF1744",
+  "icons": [
+    {
+      "src": "/NoxTheSnake/links/assets/avatar.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

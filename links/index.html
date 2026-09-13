@@ -3,58 +3,97 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./assets/avatar.png" type="image/png" />
-    <title>NoxTheSnake | Links</title>
-    <meta name="description" content="All my social media links and Minecraft skin." />
+    <title>NoxTheSnake | Links — Telegram, X, Instagram, YouTube, Minecraft Skin</title>
+    <meta name="description" content="All NoxTheSnake links: Telegram, X (Twitter), Instagram, YouTube. Plus downloadable Minecraft skin with live 3D preview." />
+    <meta name="keywords" content="NoxTheSnake links, NoxTheSnake Telegram, NoxTheSnake YouTube, Minecraft skin download" />
+    <meta name="author" content="NoxTheSnake" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FF1744" />
+    <link rel="canonical" href="https://httydcraft.github.io/NoxTheSnake/links/" />
 
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NoxTheSnake" />
+    <meta property="og:title" content="NoxTheSnake | Links" />
+    <meta property="og:description" content="All social links and Minecraft skin of NoxTheSnake." />
+    <meta property="og:url" content="https://httydcraft.github.io/NoxTheSnake/links/" />
+    <meta property="og:image" content="https://httydcraft.github.io/NoxTheSnake/links/assets/avatar.png" />
+    <meta property="og:image:alt" content="NoxTheSnake profile avatar" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="NoxTheSnake | Links" />
+    <meta name="twitter:description" content="All social links and Minecraft skin of NoxTheSnake." />
+    <meta name="twitter:image" content="https://httydcraft.github.io/NoxTheSnake/links/assets/avatar.png" />
+
+    <link rel="icon" href="./assets/avatar.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./assets/avatar.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://httydcraft.github.io/NoxTheSnake/links/",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "NoxTheSnake",
+            "url": "https://httydcraft.github.io/NoxTheSnake/links/",
+            "image": "https://httydcraft.github.io/NoxTheSnake/links/assets/avatar.png",
+            "description": "Snake into programming, videos and games.",
+            "sameAs": [
+                "https://t.me/NoxTheSnake_TG",
+                "https://x.com/NoxTheSnakeX",
+                "https://www.instagram.com/noxthesnake",
+                "https://youtube.com/@noxthesnake"
+            ]
+        }
+    }
+    </script>
 </head>
 <body class="dark-theme">
-<div id="app" class="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+<main id="app" class="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
 
     <div id="main-view">
-        <!-- 1) Профиль -->
         <section id="profile-section" class="text-center mb-8">
-            <img id="avatar" class="w-28 h-28 rounded-full mx-auto mb-4 border-4 object-cover m3-shadow-md" src="./assets/avatar.png" alt="Avatar" />
-            <h1 id="profile-name" class="text-4xl font-bold mb-2"></h1>
-            <p id="profile-description" class="text-lg text-gray-400 mb-4"></p>
+            <img id="avatar" class="w-28 h-28 rounded-full mx-auto mb-4 border-4 object-cover m3-shadow-md" src="./assets/avatar.png" alt="NoxTheSnake profile avatar" width="112" height="112" fetchpriority="high" />
+            <h1 id="profile-name" class="text-4xl font-bold mb-2">NoxTheSnake</h1>
+            <p id="profile-description" class="text-lg text-gray-400 mb-4">Snake into programming, videos &amp; games</p>
         </section>
 
-        <!-- 2) Контентная сетка (ссылки и скин) -->
         <div id="content-grid" class="content-container grid-layout grid-no-live">
 
-            <!-- Блок со ссылками (левая колонка на десктопе) -->
             <div class="main-links-block">
-                <section id="links-section" class="space-y-4"></section>
+                <nav id="links-section" class="space-y-4" aria-label="Social links"></nav>
             </div>
 
-            <!-- Блок со скином (правая колонка на десктопе) -->
-            <section id="minecraft-block">
-                <h2 id="minecraft-title" class="text-xl font-bold text-center mb-4"></h2>
+            <section id="minecraft-block" aria-label="Minecraft skin">
+                <h2 id="minecraft-title" class="text-xl font-bold text-center mb-4">My Minecraft Skin</h2>
                 <div id="skin-viewer-container">
                     <canvas id="skin-canvas"></canvas>
                 </div>
-                <!-- JS вставит сюда кнопки анимации -->
                 <div class="flex justify-center mt-3 mb-1">
                     <button id="download-skin-button" class="primary-button px-6 py-3 rounded-full font-medium m3-shadow-md">
-                        <span class="material-symbols-outlined">download</span>
-                        <span id="download-skin-text"></span>
+                        <span class="material-symbols-outlined" aria-hidden="true">download</span>
+                        <span id="download-skin-text">Download Skin</span>
                     </button>
                 </div>
             </section>
         </div>
     </div>
 
-    <!-- Нижние кнопки -->
     <div id="bottom-controls" class="flex justify-center items-center space-x-4">
         <button id="theme-toggle" class="control-button p-3 rounded-full m3-shadow-md flex items-center justify-center" aria-label="Toggle theme">
-            <span class="material-symbols-outlined" id="theme-icon">light_mode</span>
+            <span class="material-symbols-outlined" id="theme-icon" aria-hidden="true">light_mode</span>
         </button>
     </div>
-</div>
+</main>
 
 <script type="module" src="./js/main.js"></script>
 </body>

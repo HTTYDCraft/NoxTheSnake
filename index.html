@@ -3,48 +3,88 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./links/assets/avatar.png" type="image/png" />
-    <title>NoxTheSnake</title>
-    <meta name="description" content="I'm a snake into programming, making YouTube videos, and playing Minecraft & VRChat." />
+    <title>NoxTheSnake — Programming, YouTube, Minecraft &amp; VRChat</title>
+    <meta name="description" content="NoxTheSnake — snake into programming, YouTube videos, Minecraft & VRChat. Watch, play and code along." />
+    <meta name="keywords" content="NoxTheSnake, programming, YouTube, Minecraft, VRChat, Minecraft skin" />
+    <meta name="author" content="NoxTheSnake" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FF1744" />
+    <link rel="canonical" href="https://httydcraft.github.io/NoxTheSnake/" />
 
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NoxTheSnake" />
+    <meta property="og:title" content="NoxTheSnake — Programming, YouTube, Minecraft & VRChat" />
+    <meta property="og:description" content="Snake into programming, YouTube videos, Minecraft & VRChat." />
+    <meta property="og:url" content="https://httydcraft.github.io/NoxTheSnake/" />
+    <meta property="og:image" content="https://httydcraft.github.io/NoxTheSnake/links/assets/art.png" />
+    <meta property="og:image:alt" content="Artwork by NoxTheSnake" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NoxTheSnake — Programming, YouTube, Minecraft & VRChat" />
+    <meta name="twitter:description" content="Snake into programming, YouTube videos, Minecraft & VRChat." />
+    <meta name="twitter:image" content="https://httydcraft.github.io/NoxTheSnake/links/assets/art.png" />
+
+    <link rel="icon" href="./links/assets/avatar.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./links/assets/avatar.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Подключаем оба CSS, чтобы наследовать базовые стили -->
     <link rel="stylesheet" href="./links/css/style.css" />
     <link rel="stylesheet" href="./home/home.css" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://httydcraft.github.io/NoxTheSnake/",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "NoxTheSnake",
+            "url": "https://httydcraft.github.io/NoxTheSnake/",
+            "image": "https://httydcraft.github.io/NoxTheSnake/links/assets/avatar.png",
+            "description": "Snake into programming, YouTube videos, Minecraft and VRChat.",
+            "sameAs": [
+                "https://t.me/NoxTheSnake_TG",
+                "https://x.com/NoxTheSnakeX",
+                "https://www.instagram.com/noxthesnake",
+                "https://youtube.com/@noxthesnake"
+            ]
+        }
+    }
+    </script>
 </head>
 <body class="dark-theme">
-<div id="page-wrap" class="w-full max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
+<main id="page-wrap" class="w-full max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
 
-    <!-- Био -->
     <section class="card text-center p-6 m3-shadow-md">
-        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 object-cover" id="avatar" src="./links/assets/avatar.png" alt="Avatar" />
+        <img class="w-28 h-28 rounded-full mx-auto mb-4 border-4 object-cover" id="avatar" src="./links/assets/avatar.png" alt="NoxTheSnake profile avatar" width="112" height="112" fetchpriority="high" />
         <h1 class="text-4xl font-bold mb-2">NoxTheSnake</h1>
         <p class="text-lg text-gray-400 mb-4">
-            I'm a snake into programming, making YouTube videos, and playing Minecraft & VRChat. Fun, curious, and a bit horny ^^
+            I'm a snake into programming, making YouTube videos, and playing Minecraft &amp; VRChat. Fun, curious, and a bit horny ^^
         </p>
         <a href="./links/" class="primary-button inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium m3-shadow-md">
-            <span class="material-symbols-outlined">link</span>
+            <span class="material-symbols-outlined" aria-hidden="true">link</span>
             <span>All My Links</span>
         </a>
     </section>
 
-    <!-- Арт -->
     <section class="card p-6 mt-6 m3-shadow-md">
-        <img class="w-full rounded-lg" src="./links/assets/art.png" alt="Artwork by NoxTheSnake" />
+        <img class="w-full rounded-lg" src="./links/assets/art.png" alt="Artwork by NoxTheSnake" width="1200" height="630" loading="lazy" decoding="async" />
     </section>
 
-    <!-- Переключатель темы -->
     <div class="flex justify-center items-center mt-8 mb-8">
-        <button id="theme-toggle-bottom" class="control-button p-3 rounded-full m3-shadow-md">
-            <span class="material-symbols-outlined" id="theme-icon-bottom">light_mode</span>
+        <button id="theme-toggle-bottom" class="control-button p-3 rounded-full m3-shadow-md" aria-label="Toggle theme">
+            <span class="material-symbols-outlined" id="theme-icon-bottom" aria-hidden="true">light_mode</span>
         </button>
     </div>
 
-</div>
-<!-- Убедитесь, что путь к скрипту правильный -->
+</main>
 <script type="module" src="./home/home.js"></script>
 </body>
 </html>
